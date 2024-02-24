@@ -14,6 +14,7 @@ import API from "../../api/API";
 import Space from "../shared/linebreak/Space";
 import Button from '@mui/material/Button';
 import { TextField } from '@mui/material';
+import { PayPalButton } from "react-paypal-button-v2";
 
 
 function ccyFormat(num: number) {
@@ -62,7 +63,7 @@ export default function SpanningTable() {
     return (
         <>
             <h1>Koszyk</h1>
-            <Button variant="contained" onClick={()=>clearCart()}>Wyczyść koszyk</Button>
+            <Button variant="contained" onClick={() => clearCart()}>Wyczyść koszyk</Button>
             <TableContainer component={Paper}>
                 <Table sx={{minWidth: 700}} aria-label="spanning table">
                     <TableHead>
@@ -139,8 +140,17 @@ export default function SpanningTable() {
             />
             <Space></Space>
             <h1>Dokonaj płatości</h1>
-            <Button variant="contained" onClick={()=>payCart()}>Zapłać</Button>
-
+            <Button variant="contained" onClick={() => payCart()}>Zapłać</Button>
+            <div>
+                <PayPalButton
+                    amount={invoiceTotal}
+                    onSuccess={() => {
+                    }}
+                    options={{
+                    clientId: "Aexqbkt-PpHleWWFRC_gmzovK5LrzHrmhuqYTf_nJ5gyhJfURH1PBODoKXHN0lakwELJ4GWcp7nHKKAn",
+                }}
+                    />
+            </div>
         </>
     );
 }
