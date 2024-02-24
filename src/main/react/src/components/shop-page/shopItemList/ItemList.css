@@ -1,0 +1,9 @@
+.shop-item-container {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.padding {
+    padding: 2rem;
+}

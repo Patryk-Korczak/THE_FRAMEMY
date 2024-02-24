@@ -1,0 +1,26 @@
+.categories > .row {
+    justify-content: center;
+}
+
+.categories-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    user-select: none;
+    background-color: #6667AB;
+    min-height: 200px;
+}
+.categories-item > div {
+    transition: .1s ease-in;
+}
+.categories-item:hover > div {
+    transition: .2s ease-out;
+    transform: translateY(-5px);
+}
+.categories-item--title {
+    display: inline;
+    text-transform: uppercase;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+}

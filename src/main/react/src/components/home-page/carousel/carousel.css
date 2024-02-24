@@ -1,0 +1,7 @@
+#carouselExampleIndicators, .carousel-inner {
+    max-height: 50vh;
+}
+
+.carousel-item img {
+    transform: translate(0,-20vh);
+}

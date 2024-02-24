@@ -1,0 +1,52 @@
+.shop-card-container {
+    display: inline-block;
+    min-height: 300px;
+    float: left;
+    position: relative;
+    width: 19%;
+    transition: .1s ease-in;
+}
+
+.shop-card-container:hover {
+    transition: .2s ease-out;
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0 0 22px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 22px -5px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 22px -5px rgba(66, 68, 90, 1);
+}
+
+.shop-item-title {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+
+}
+
+.shop-item-price {
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    bottom: 5%;
+    left: 6%;
+}
+
+.shop-image {
+    background-color: #ffffff;
+    height: 15px;
+    min-width: 60%;
+    margin-top: 1rem;
+}
+
+.shop-card-container {
+    position: relative;
+}
+.shop-card-container button {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+
+.shop-item-image {
+    height: 170px;
+
+}

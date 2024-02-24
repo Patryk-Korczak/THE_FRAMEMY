@@ -1,0 +1,52 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    min-width: 800px;
+    padding: 100px;
+}
+
+.register-block {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem;
+    justify-content: space-evenly;
+    min-height: 300px;
+}
+
+.register-label {
+    font-size: 0.75rem;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.submit-button-container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.submit-button {
+        padding: 0.5rem;
+    font-size: 0.75rem;
+    color: whitesmoke;
+    background: #6667AB;
+}
+
+.submit-button:focus {
+    color: #b0b0d2;
+}
+
+.column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.input-container > input {
+    height: 30px;
+    width: 250px;
+    padding: 1rem;
+}
+
